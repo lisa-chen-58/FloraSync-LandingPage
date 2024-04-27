@@ -1,14 +1,14 @@
 :root {
-  --nav-logo: 4rem;
+  --logo-size: 4rem;
   --main-center: 10px auto;
-  --font-weight-nav: 800;
+  --nav-font-weight: 800;
   --image-height: 150px;
 }
 
 * {
   margin: 0;
   padding: 0;
-  border: box-sizing;
+  box-sizing: border-box;
   background-color: #011E3B;
   color: #FBFBFB;
   font-family: "Red Hat Display", sans-serif;
@@ -28,36 +28,40 @@ nav {
   align-items: center;
   background-color: #F9F9F9;
   width: 100%;
-  height: var(--nav-logo);
-  font-weight: var(--font-weight-nav);
+  height: var(--logo-size);
+  font-weight: var(--nav-font-weight);
+  z-index: 0;
 }
 
 nav * {
   background-color: transparent;
-  color: rgb(57, 136, 106)
+  color: #39886A; /* Light Green */
 }
 
-#header-img  {
+#header-img {
   height: 100%;
-  max-width: var(--nav-logo);
+  max-width: var(--logo-size);
   margin-right: 1rem;
 }
+
 #group-nav-link {
   display: flex;
   justify-content: flex-end;
   background-color: transparent;
 }
+
 .nav-link {
   text-decoration: none;
-  color: #0f3826;
+  color: #0F3826; /* Dark Green */
   margin: 0 15px;
   padding: 5px;
   border-radius: 7px;
-  background-color: #a4ebb5;
+  background-color: #A4EBB5; /* Light Green */
 }
+
 .nav-link:hover {
-  background-color: #FBFFF3;
-  color: #011E3B;
+  background-color: #FBFFF3; /* Lightest Green */
+  color: #011E3B; /* Dark Blue */
   border-radius: 5px;
   padding: 5px;
   font-size: 120%;
@@ -67,37 +71,34 @@ nav * {
 /* MAIN */
 main {
   display: flex;
-  align-items:center;
-  flex-direction:column;
+  align-items: center;
+  flex-direction: column;
   gap: 40px 0;
-  margin-top: calc(var(--nav-logo)*1.4);
+  margin-top: calc(var(--logo-size) * 1.4);
 }
 
-/* ----ABOUT---- */
-
+/* ABOUT */
 #about {
-  padding: 0 30px;
-  padding: 0;
   text-align: center;
+  padding: 0 30px;
 }
 
 #about h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: rgb(121, 229, 198);
+  color: #79E5C6; /* Light Cyan */
 }
 
 #about p {
   line-height: 1.5;
-  color: rgb(220, 238, 233);
+  color: #DCEEE9; /* Light Cyan */
   padding: 0 30px;
   margin-bottom: 10px;
 }
 
-/* ---- FORM ---- */
-
+/* FORM */
 form {
-  border: 2px #F9F9F9 solid;
+  border: 2px solid #F9F9F9;
   padding: 20px;
   width: fit-content;
 }
@@ -111,7 +112,7 @@ form * {
 
 form input {
   background-color: aliceblue;
-  opacity: 60%;
+  opacity: 0.6;
   color: black;
 }
 
@@ -120,20 +121,20 @@ form input {
   color: darkslategrey;
 }
 
-@media(max-width: 200px) {
+@media (max-width: 200px) {
   form {
     justify-content: column;
   }
 }
 
-/* ---- PRODUCT ---- */
-
-.products h2, .product {
+/* PRODUCT */
+.products h2,
+.product {
   text-align: center;
 }
 
 .product {
-  position: relative; /* Make position relative - stacking effect */
+  position: relative;
   display: inline-block;
   margin: 15px;
 }
@@ -144,14 +145,11 @@ form input {
 
 .product img {
   height: var(--image-height);
-  border-top: 3px rgb(0, 60, 0) solid;
-  border-right: 5px rgb(153, 212, 39) double;
-  border-bottom: 5px greenyellow double;
-  border-left: 3px rgb(0, 60, 0) solid;
+  border: 3px solid #003C00; /* Dark Green */
   border-radius: 8px;
-  transition: transform 0.3s ease; /* Add transition for smooth scaling */
-  z-index: 1;
-  opacity: 60%;
+  transition: transform 0.3s ease;
+  z-index: 2;
+  opacity: 0.6;
 }
 
 .product:hover .display-on-hover {
@@ -163,28 +161,27 @@ form input {
   width: calc(var(--image-height) * 1.5);
   padding-bottom: 10px;
   position: absolute;
-  left: 50%; /* Centers horizontally */
+  left: 50%;
   top: 110%;
-  transform: translateX(-50%); /* Centers horizontally */
-  background-color: rgb(55, 31, 116);
+  transform: translateX(-50%);
+  background-color: #371F74; /* Dark Purple */
   color: #FFF;
   padding: 10px;
   border-radius: 8px;
-  z-index:2;
+  z-index: 3;
 }
 
 .display-on-hover + .product-text {
   font-weight: bold;
-  color: rgb(171, 181, 235);
+  color: #ABB5EB; /* Light Purple */
 }
 
 .product img:hover {
   transform: scale(1.7);
-  opacity: 100%;
+  opacity: 1;
 }
 
-  /* ---- VIDEO ---- */
-
+/* VIDEO */
 #video p {
   text-align: center;
 }
