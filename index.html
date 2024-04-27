@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </header>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <img id="header-img" alt="logo" src="https://images.unsplash.com/photo-1536882240095-0379873feb4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGxhbnR8ZW58MHx8MHx8fDA%3D"/>
+        <h1>FloraSync</h1>
+        <div id="group-nav-link">
+          <a class="nav-link" href="#form">Form</a>
+          <a class="nav-link" href="#video">Video</a>
+          <a class="nav-link" href="#products">Products</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+      <!-- -------------------- ABOUT -------------------- -->
+      <div id="about">
+        <h2>About FloraSync</h2>
+        <div class="about-section">
+          <p>
+            Welcome to <span class="about-bold">FloraSync</span>, your personal assistant for indoor gardening!
+          </p>
+          <p>
+            Our smart indoor plant pot takes the guesswork out of plant care by automatically adjusting soil moisture, light exposure, and nutrient levels based on the specific needs of your plants. Say goodbye to wilted leaves and hello to thriving greenery!
+          </p>
+          <p>
+            With its sleek, modern design and intuitive mobile app control, FloraSync makes it easy to monitor your plants' health in real-time, right from your smartphone. Whether you're a seasoned plant parent or just getting started, FloraSync is here to help you cultivate a green oasis in any space.
+          </p>
+          <p>
+            Join the FloraSync community today and experience the future of indoor gardening!
+          </p>
+        </div>
+      </div>
+
+      <!-- -------------------- FORM -------------------- -->
+      <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+        <label for="email">E-mail address: 
+        </label>
+        <input id="email" name="email" type="email" placeholder="Enter email" />
+        <input id="submit" type="submit" />
+      </form>
+
+      <!-- -------------------- PRODUCT -------------------- -->
+      <div class="products">
+        <h2>FloraSync Products</h2>
+        <div id="product-group">
+          <div class="product">
+            <img class="hoverable-product" src="./img/product1.jpeg" alt="product1"/>
+            <p class="display-on-hover">A modern, minimalist style with a digital display, and is shown alongside its mobile app interface.</p>
+            <p class="product-text">Product 1</p>
+          </div>
+          <div class="product">
+            <img class="hoverable-product" src="./img/product2.jpeg" alt="product2"/>
+            <p class="display-on-hover">A wider vase with a glossy white finish, designed to accommodate multi-colored flowers.</p>
+            <p class="product-text">Product 2</p>
+          </div>
+          <div class="product">
+            <img class="hoverable-product" src="./img/product3.jpeg" alt="product3"/>
+            <p class="display-on-hover">The latest design featuring a smart indoor plant pot with two compartments: one for a lush, leafy green plant and the other for a variety of multi-colored flowers in new shades. The pot has a textured grey finish and dual digital displays.</p>
+            <p class="product-text">Product 3</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------- VIDEO -------------------- -->
+      <div id="video">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/q6z-GjZQ89Y?si=MNBMqY-wn7uC3IjF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Relax with some soothing sounds found on YouTube</p>
+      </div>
+    </main>
+  </body>
+</html>
