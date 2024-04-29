@@ -1,5 +1,3 @@
-![1714195665102](image/README/1714195665102.png)
-
 # FloraSync Landing Page
 
 This repository was created to store project files for FloraSync, a landing page created as a result of the [freeCodeCamp Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/).
@@ -24,3 +22,7 @@ To view this project locally, follow these steps:
 - **img**: This is where the images used in the project are stored.
 
 Feel free to leaf through and enjoy this project!
+
+## What you should see:
+
+![1714368958292](image/README/1714368958292.png)
